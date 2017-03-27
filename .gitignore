@@ -1,0 +1,8 @@
+.idea/
+*.pyc
+.DS_Store
+ejemplo_mysql/node_modules
+nodeapi/node_modules
+servidor_basico/node_modules
+version_modulo/node_modules
+ejemplo_mongodb_driver/node_modules
