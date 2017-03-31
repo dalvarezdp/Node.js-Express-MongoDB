@@ -12,10 +12,12 @@ const mongoose = require('mongoose');
 const Agente = mongoose.model('Agente');
 
 // authenticacion con Http basic authentication
-const basicAuth = require('../../lib/basicAuth');
-router.use(basicAuth);
+//const basicAuth = require('../../lib/basicAuth');
+//router.use(basicAuth);
 
-
+// authentication con Json Web Token
+const jwtAuth = require('../../lib/jwtAuth');
+router.use(jwtAuth);
 
 // GET - devuelve una lista de agentes
 router.get('/', function(req, res, next) {
